@@ -1,0 +1,56 @@
+#headers{
+    width: 100%;
+    @include hl(.87rem, .87rem);
+    border-bottom: 1px solid $borderColor;
+    position: fixed;
+    left: 0;
+    top: 0;
+    color: $moreFont;
+    background: $white;
+    z-index: 99999;
+    h4{
+        @include textCenter;
+        font-size: .36rem;
+    }
+    span{
+        position: absolute;
+        right: .3rem;
+        top: 0;
+        font-size: .3rem;
+    }
+    i{
+        padding: 0 .3rem;
+        height: .86rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        img{
+            @include wh(.20rem, .34rem)
+        }
+    }
+    .mode-content{
+        @include wh(100%, 100%);
+        background-color: rgba(0, 0, 0, .5);
+        position: fixed;
+        z-index: 999;
+        top: .87rem;
+    }
+    .more-set{
+        background: $white;
+        padding-left: .3rem;
+        li{
+            @include hl(1rem, 1rem);
+            border-bottom: 1px solid $borderColor;
+            padding-right: .3rem;
+            &:last-child{
+                border-bottom:none;
+            }
+            p{
+                background: url(../images/arr_right.png) no-repeat right center/.14rem .24rem;
+            }
+        }
+    }
+}

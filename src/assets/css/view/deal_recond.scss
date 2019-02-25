@@ -1,0 +1,45 @@
+#dealRecond{
+    .container{
+        ul{
+            li{
+                padding: .17rem .3rem .21rem 0;
+                @include borderBottom;
+                &:last-child{
+                    border-bottom: none
+                }
+                div{
+                    &:first-child{
+                        line-height: .4rem;
+                        padding: .05rem 0;
+                        overflow: hidden;
+                        color: $dt;
+                        @include fontBold;
+                        p{
+                            &:first-child{
+                                float: left;
+                                width: 70%;
+                            }
+                            &:last-child{
+                                float: right;
+                                width: 30%;
+                                text-align: right;
+                            }
+                        }
+                    }
+                    &:last-child{
+                        @include hl(.37rem, .37rem);
+                        @include sc(.24rem, $lessFont);
+                        span{
+                            &:first-child{
+                                float: left
+                            }
+                            &:last-child{
+                                float: right
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

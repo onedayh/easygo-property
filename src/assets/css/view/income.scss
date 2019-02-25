@@ -1,0 +1,26 @@
+#income{
+    .list{
+        margin-top: .2rem;
+        dt{
+            h6{
+                font-size: .32rem;
+                text-align: right;
+                &:first-child{
+                    text-align: left
+                }
+            }
+        }
+        dd{
+            &:nth-child(2n){
+                background-color: #f8f8f8
+            }
+            p{
+                text-align: right;
+                &:first-child{
+                    text-align: left;
+                    color: #666
+                }
+            }
+        }
+    }
+}

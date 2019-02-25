@@ -1,0 +1,19 @@
+.remind{
+    @include wh(2.4rem, 2.4rem);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0 ,0 ,0 ,.8);
+    @include borderRadius(8px);
+    padding-top: .45rem;
+    z-index: 100;
+    @include textCenter;
+    img{
+        @include wh(.92rem, .92rem)
+    }
+    p{
+        @include hl(.92rem, .92rem);
+        @include sc(.28rem, $white)
+    }
+}

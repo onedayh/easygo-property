@@ -1,0 +1,45 @@
+#calendar3{
+    width: 100%;
+    padding: .2rem;
+    background: $white;
+    .c-header{
+        color: $themeColor;
+        @include hl(.64rem, .64rem);
+        @include textCenter;
+        position: relative;
+        span{
+            position: absolute;
+            top: 0;
+            padding: .1rem .2rem;
+            z-index: 99
+        }
+        .c-prev{
+            left: 0
+        }
+        .c-next{
+            right: 0
+        }
+    }
+    .c-body{
+        padding: .2rem .2rem 0;
+        ul{
+            overflow: hidden;
+        }
+        li{
+            float: left;
+            width: 20%;
+            @include hl(.64rem, .64rem);
+
+            margin-bottom: .2rem;
+            @include sc(.28rem, $dt);
+            span{
+                padding: .03rem .2rem;
+                @include borderRadius(.32rem);
+                &.active{
+                    background-color: $themeColor;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

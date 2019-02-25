@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+//变量
+@import './public/var.scss';
+//mixin
+@import './public/mixin.scss';
+//base
+@import './public/base.scss';
+//header
+@import './components/headers.scss';
+//calendar3
+@import 'components/calendar3';
+//remind
+@import './components/remind.scss';
+//tips
+@import './components/tips.scss';
+//登录
+@import './view/login.scss';
+//首页
+@import './view/index.scss';
+//修改密码
+@import './view/change_password.scss';
+//收入与流水
+@import './view/income.scss';
+//交易记录
+@import './view/deal_recond.scss';
+//购物清单
+@import './view/shopping_list.scss';
+//对账单
+@import './view/bill.scss';
+//对账单详情
+@import './view/bill_detail.scss';
+//门店分析
+@import './view/store_analyse.scss';
+//门店列表
+@import './view/shop_list.scss';
+//分成方式
+@import './view/share_way.scss';
+
+
+

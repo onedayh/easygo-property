@@ -1,0 +1,76 @@
+#bill{
+    .wrap1{
+        @include hl(.83rem, .83rem);
+        span{
+            width: 3rem;
+            @include textCenter;
+            background-position:  2.5rem center
+        }
+        i{
+            width: .8rem
+        }
+        select{
+            width: 3rem;
+            padding-left: 1rem;
+            background-position:  2.5rem center
+        }
+    }
+    dl{
+        background-color: $white;
+        margin-bottom: .2rem;
+        &:last-child{
+            margin-bottom: 0
+        }
+        dt,dd{
+            padding-left: .3rem;
+        }
+        dt{
+            @include hl(.69rem, .68rem);
+            @include sc(.26rem, $dd);
+            @include borderBottom;
+            @include fontBold;
+        }
+        dd{
+            div{
+                @include hl(1.26rem, 1.25rem);
+                padding: .2rem .3rem .19rem 0;
+                overflow: hidden;
+                position: relative;
+                @include borderBottom;
+                p, span{
+                    font-size: .3rem;
+                    @include hl(.46rem, .46rem)
+                }
+                p{
+                    color: $dt;
+                    float: left
+                }
+                span{
+                    color: $lessFont;
+                    float: right;
+                    &.done{
+                        color: #ef5151
+                    }
+                }
+                i{
+                    @include hl(.4rem, .4rem);
+                    @include sc(.28rem, $moreFont);
+                    position: absolute;
+                    right: .3rem;
+                    bottom: .19rem
+                }
+            }
+            &:last-child div{
+                border-bottom: none
+            }
+        }
+    }
+    .mode{
+        position: fixed;
+        @include wh(100%, 100%);
+        background-color: rgba(0, 0, 0, .5);
+        top: .87rem;
+        left: 0;
+        z-index: 999
+    }
+}

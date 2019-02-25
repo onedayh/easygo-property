@@ -1,0 +1,38 @@
+#shopList{
+    .shopListWrap{
+        h6{
+            padding: 0 .3rem;
+            @include hl(.7rem, .69rem);
+            @include sc(.26rem ,$dd);
+            @include borderBottom;
+            border-top: 1px solid $borderColor;
+        }
+        ul{
+            background-color: $white;
+            padding-left: .3rem;
+            li{
+                @include hl(.88rem, .87rem);
+                @include borderBottom;
+                font-size: .3rem;
+                &:last-child{
+                    border-bottom: none
+                }
+                div{
+                    padding-right: .3rem;
+                    height: .87rem;
+                    p{
+                        color: $dt;
+                        float: left
+                    }
+                    span{
+                        color: $lessFont;
+                        float: right
+                    }
+                }
+            }
+        }
+        &:first-child h6{
+            border-top: none
+        }
+    }
+}

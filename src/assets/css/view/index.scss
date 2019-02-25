@@ -1,0 +1,40 @@
+#index{
+    .top{
+        overflow: hidden;
+        padding: .49rem 0 .2rem;
+        li{
+            float: left;
+            width: 33.3%;
+            @include textCenter;
+            img{
+                @include wh(.9rem, .9rem)
+            }
+            p{
+                font-size: .28rem;
+                @include hl(.7rem, .7rem)
+            }
+        }
+    }
+    .tit{
+        @include hl(1.01rem, 1rem);
+        font-size: .32rem;
+        @include borderBottom;
+        background: url(../images/arr_right.png) no-repeat right center/.14rem .24rem
+    }
+    .info{
+        padding-top: .83rem;
+        @include textCenter;
+        p{
+            @include hl(.59rem, .59rem)
+        }
+        h1{
+            @include hl(.85rem, .85rem);
+            font-size: .72rem
+        }
+        span{
+            display: block;
+            @include hl(.56rem, .56rem);
+            @include sc(.26rem, $lessFont)
+        }
+    }
+}

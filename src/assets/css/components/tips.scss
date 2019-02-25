@@ -1,0 +1,61 @@
+.mode{
+    @include wh(100%, 100%);
+    background-color: rgba(0,0,0,.5);
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    .tips{
+        background-color: $white;
+        @include textCenter;
+        @include wh(5.5rem, 2.25rem);
+        @include borderRadius(8px);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        .message{
+            @include hl(1.31rem, .5rem);
+            @include borderBottom;
+            padding: .15rem .3rem;
+            @include fontBold;
+            display: table;
+            width: 100%;
+            span{
+                display: table-cell;
+                vertical-align: middle
+            }
+        }
+        .button{
+            height: .94rem;
+            i,span{
+                @include sc(.36rem, #0284f2);
+                display: block;
+                @include hl(.94rem, .94rem);
+                &:active{
+                    background-color: $borderColor
+                }
+            }
+            span{
+                width: 50%;
+                float: left;
+                &:first-child{
+                    border-right: 1px solid $borderColor;
+                    @include borderRadius(0 0 0 8px)
+                }
+                &:last-child{
+                    @include borderRadius(0 0 8px 0)
+                }
+                &.have-cancel{
+                    @include borderRadius(0 0 8px 8px);
+                    width: 100%;
+                    border-right: none;
+                }
+            }
+            i{
+                width: 100%;
+                @include borderRadius(0 0 8px 8px)
+            }
+        }
+    }
+}

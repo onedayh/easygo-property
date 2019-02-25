@@ -1,0 +1,45 @@
+#billDetail{
+    .mm{
+        @include hl(.8rem, .8rem);
+        font-size: .28rem;
+        padding: 0 .3rem;
+        p{
+            color: $dd;
+            float: left
+        }
+        span{
+            color: $lessFont;
+            float: right
+        }
+    }
+    .list{
+        margin-top: .2rem;
+        dt{
+            h6{
+                font-size: .32rem;
+                text-align: right;
+                &:first-child{
+                    text-align: left
+                }
+            }
+        }
+        dd{
+            &:nth-child(2n){
+                background-color: #f8f8f8
+            }
+            p{
+                text-align: right;
+                &:first-child{
+                    text-align: left;
+                    color: #666
+                }
+            }
+        }
+        .total{
+            p{
+                width: auto;
+                padding-left: .3rem;
+            }
+        }
+    }
+}

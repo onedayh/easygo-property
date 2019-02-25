@@ -1,0 +1,42 @@
+//宽高
+@mixin wh($width, $height){
+	width: $width;
+	height: $height
+}
+
+//字体大小，颜色
+@mixin sc($size, $color){
+	font-size: $size;
+	color: $color
+}
+
+//高，行高
+@mixin hl($height, $line){
+	height: $height;
+	line-height: $line
+}
+
+//字体居中
+@mixin textCenter{
+	text-align: center
+}
+
+// 文字过长时显示省略号
+@mixin textOverflow { overflow: hidden; text-overflow: ellipsis; white-space: nowrap}
+
+// 圆角
+@mixin borderRadius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+    border-radius: $radius
+}
+
+//下边框
+@mixin borderBottom { border-bottom: 1px solid $borderColor }
+
+//字体加粗
+@mixin fontBold {
+	font-weight: bold
+}

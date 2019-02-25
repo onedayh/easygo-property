@@ -1,0 +1,16 @@
+#shareWay{
+    .wrap{
+        h6{
+            @include hl(.81rem, .69rem);
+            padding-top: .12rem;
+            font-size: .32rem;
+        }
+        div{
+            p{
+                @include hl(.65rem, .5rem);
+                padding-bottom: .15rem;
+                font-size: .3rem
+            }
+        }
+    }
+}
